@@ -1,0 +1,25 @@
+# Xrootd operator CI workflow
+---
+name: "Xrootd operator CI"
+on:
+  push:
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    name: Run Prometheus Demo 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup KinD
+        uses: engineerd/setup-kind@v0.4.0
+        with:
+          version: "v0.8.1"
+      - name: Testing
+        run: |
+        kubectl cluster-info
+        kubectl get pods -n kube-system
+        echo "current-context:" $(kubectl config current-context)
+        echo "environment-kubeconfig:" ${KUBECONFIG}
