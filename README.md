@@ -1,4 +1,6 @@
-# Pre-requisite 
+# Prometheus Demo [![Prometheus Demo CI](https://github.com/k8s-school/prometheus-demo/workflows/CI/badge.svg)](https://github.com/k8s-school/prometheus-demo/actions?query=workflow%3A"CI")
+
+# Pre-requisites
 
 An up and running k8s cluster
 
