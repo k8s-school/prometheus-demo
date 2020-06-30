@@ -11,3 +11,5 @@ kubectl create -f https://raw.githubusercontent.com/mateobur/prometheus-monitori
 # See https://stackoverflow.com/questions/52991038/how-to-create-a-servicemonitor-for-prometheus-operator
 kubectl apply -f servicemonitor.yaml
 ```
+
+And also: https://prometheus.io/docs/guides/go-application/
