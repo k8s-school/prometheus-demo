@@ -23,7 +23,7 @@ jobs:
         id: install
       - name: Testing
         run: |
-        kubectl cluster-info
-        kubectl get pods -n kube-system
-        echo "current-context:" $(kubectl config current-context)
-        echo "environment-kubeconfig:" ${KUBECONFIG}
+          kubectl cluster-info
+          kubectl get pods -n kube-system
+          echo "current-context:" $(kubectl config current-context)
+          echo "environment-kubeconfig:" ${KUBECONFIG}
